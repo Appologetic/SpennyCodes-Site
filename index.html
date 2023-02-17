@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+        body{
+            background-color: #191d32;
+        }
+        .navigation-container{
+            position: absolute;
+            right: 0;
+            height: 100vh;
+        }
+        .navigation-container::before{
+            content: '';
+            height: 30vh;
+            width: 10vw;
+            display:block;
+        }
+        nav{
+            text-align: center;
+            height: 10vh;
+            margin-right: -3px;
+        }
+        .nav-link-container{
+            margin-top: 2vh;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            background-color: transparent;
+            border: solid 2px #F0EDEE;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            transition: 0.3s;
+        }
+        @media (max-width: 480px) {
+            .nav-link-container {
+                transform: rotate(-90deg) !important;
+                margin-right: -8vw;
+                margin-top: 8vh;
+            }
+            .navigation-container::before{
+                content: '';
+                height: 15vh;
+                width: 10vw;
+                display:block;
+            }
+            .active-nav{
+                background-color: #F0EDEE;
+            }
+        }
+        .nav-text{
+            color: #F0EDEE !important;
+            text-decoration: none;
+            font-family: 'League Spartan', sans-serif;
+        }
+        .active-nav-text{
+                color: #191d32 !important;
+                text-decoration: none;
+                font-family: 'League Spartan', sans-serif;
+            }
+        .active-nav{
+            background-color: #F0EDEE;
+            transform: scale(1.2)
+        }
+        .nav-link-container:hover{
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation-container">
+            <nav>
+                <div class="nav-link-container rounded-top rounded-start active-nav">
+                    <a href="" class="active-nav-text">HOME</a><br>
+                </div>
+                <div class="nav-link-container rounded-top rounded-start">
+                    <a href="nav-text" class="nav-text">ABOUT</a><br>
+                </div>
+                <div class="nav-link-container rounded-top rounded-start">
+                    <a href="nav-text" class="nav-text">SPECIALTIES</a><br>
+                </div>
+                <div class="nav-link-container rounded-top rounded-start">
+                    <a href="nav-text" class="nav-text">WORK</a><br>
+                </div>
+                <div class="nav-link-container rounded-top rounded-start">
+                    <a href="nav-text" class="nav-text">CONTACT</a><br>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+    <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
