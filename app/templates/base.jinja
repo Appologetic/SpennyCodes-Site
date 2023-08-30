@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    {% assets "css_all" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div style="height:100vh; width:100vw; background-position: center !important; center; background-attachment: fixed; background:url(static/assets/terminalbg.png); background-repeat: no-repeat; background-size:cover;">
+        {% block main%} {% endblock %}
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+        <!-- Bootstrap/HTMX JavaScript Libraries -->
+        {% assets "js_all" %}
+        <script type="javascript/text" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+</body>
+
+</html>

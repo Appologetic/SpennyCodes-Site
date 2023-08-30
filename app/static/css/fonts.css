@@ -1,0 +1,35 @@
+@font-face{
+    font-family: "retro";
+    src: url('../css/fonts/retro_gaming-webfont.woff2')format("woff"),
+         url('../css/fonts/retro_gaming-webfont.woff')format('woff');
+         font-weight: normal;
+         font-style: normal;
+        }
+
+.retro {
+    font-family: "retro";
+}
+
+.outlined {
+    -webkit-text-stroke-color: #32A956;
+    color: transparent;
+    -webkit-text-stroke-width: 0.25rem;
+}
+
+@keyframes bob {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(3%);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(-3%)
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
