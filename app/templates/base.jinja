@@ -18,17 +18,21 @@
         <!-- place navbar here -->
     </header>
     <main>
-        <div style="height:100vh; width:100vw; background-position: center !important; center; background-attachment: fixed; background:url(static/assets/terminalbg.png); background-repeat: no-repeat; background-size:cover;">
-        {% block main%} {% endblock %}
+        <div style="overflow: hidden;" class="flicker">
+            <div class="scanline"></div>
+        </div>
+        <div class="flicker"
+            style="height:100vh; width:100vw; background-position: center !important; background-attachment: fixed; background:url(static/assets/terminalbg.png); background-repeat: no-repeat; background-size:cover;">
+            {% block main%} {% endblock %}
         </div>
     </main>
     <footer>
         <!-- place footer here -->
     </footer>
-        <!-- Bootstrap/HTMX JavaScript Libraries -->
-        {% assets "js_all" %}
-        <script type="javascript/text" src="{{ ASSET_URL }}"></script>
-        {% endassets %}
+    <!-- Bootstrap/HTMX JavaScript Libraries -->
+    {% assets "js_all" %}
+    <script type="javascript/text" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
 </body>
 
 </html>
